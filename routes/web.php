@@ -32,7 +32,14 @@ Route::middleware(['auth'])->group(function () {
         ->name('two-factor.show');
 });
 
+
 $post=new Post();
 $post->title='test title';
 $post->content='testcontent';
 $post->save();
+
+
+Post::create([
+    'title'=>'create title',
+    'content'=>'created content',
+]);
