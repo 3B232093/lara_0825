@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
+use App\Models\Post;
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +31,8 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 });
+
+$post=new Post();
+$post->title='test title';
+$post->content='testcontent';
+$post->save();
