@@ -61,5 +61,6 @@ foreach ($posts as $post){
 }
 dd($posts);
 
-
-
+//條件式
+$posts=Post::where('id','<',10)->orderBy('id', 'DESC')->get();
+dd($posts);
