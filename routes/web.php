@@ -78,5 +78,12 @@ $post->title='saved title';
 $post->content='saved content';
 $post->save();
 
+//刪除資料 delete/destroy方法
+$post=Post::find(1);
+$post->delegte();
+
+Post::destroy(2);
+
+
 
 
