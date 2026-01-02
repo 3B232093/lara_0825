@@ -72,3 +72,11 @@ $post->update([
     'content'=>'updated content',
 ]);
 
+//save方法
+$post=Post::find(1);
+$post->title='saved title';
+$post->content='saved content';
+$post->save();
+
+
+
