@@ -64,3 +64,11 @@ dd($posts);
 //條件式
 $posts=Post::where('id','<',10)->orderBy('id', 'DESC')->get();
 dd($posts);
+
+//更新資料 update
+$post=Post::find(1);
+$post->update([
+    'title'=>'updatedtitle',
+    'content'=>'updated content',
+]);
+
