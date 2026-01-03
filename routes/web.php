@@ -91,3 +91,10 @@ dd($allPosts);
 $featuredPosts = \App\Models\Post::where('is_feature', 1)->get();
 dd($featuredPosts);
 
+//單一筆貼文
+
+$fourthPost = \App\Models\Post::find(4);
+dd($fourthPost);
+
+$lastPost = \App\Models\Post::orderBy('id', 'DESC')->first();
+dd($lastPost);
