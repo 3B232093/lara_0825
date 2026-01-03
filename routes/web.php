@@ -33,7 +33,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
-$post=new Post();
+/* $post=new Post();
 $post->title='test title';
 $post->content='testcontent';
 $post->save();
@@ -82,7 +82,7 @@ $post->save();
 $post=Post::find(1);
 $post->delegte();
 
-Post::destroy(2);
+Post::destroy(2); */
 
 
 
