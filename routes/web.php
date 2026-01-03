@@ -84,6 +84,10 @@ $post->delegte();
 
 Post::destroy(2); */
 
+//多筆貼文的集合
+$allPosts=Post::all();
+dd($allPosts);
 
-
+$featuredPosts = \App\Models\Post::where('is_feature', 1)->get();
+dd($featuredPosts);
 
