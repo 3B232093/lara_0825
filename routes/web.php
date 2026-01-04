@@ -84,7 +84,7 @@ $post->delegte();
 
 Post::destroy(2); */
 
-//多筆貼文的集合
+/* //多筆貼文的集合
 $allPosts=Post::all();
 dd($allPosts);
 
@@ -97,4 +97,4 @@ $fourthPost = \App\Models\Post::find(4);
 dd($fourthPost);
 
 $lastPost = \App\Models\Post::orderBy('id', 'DESC')->first();
-dd($lastPost);
+dd($lastPost); */
